@@ -54,49 +54,84 @@
       <script src="js/respond.min.js"></script>
     <![endif]-->
 
+	<style>
+		html {
+			scroll-behavior: smooth;
+		}
+
+		header {
+			background-color: transparent !important;
+		}
+
+		#header .container{
+			padding: 0px 10px !important;
+		}
+		#header .container{
+			max-width: 100% !important;
+		}
+
+		.header3.scrolled {
+			background-color: #fff !important;
+			transition: 1s;
+		}
+	</style>
 </head>
 	
 <body>
 	<div class="body-inner">
 	<!-- Header start -->
-<header id="header" class="navbar-fixed-top header2" role="banner">
-
-     <div class="container">
+	<header id="header" class="navbar-fixed-top" role="banner">
+		<div class="container">
 			<div class="row">
-				<!-- Logo start -->
-				<div class="navbar-header">
-				    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-				        <span class="sr-only">Toggle navigation</span>
-				        <span class="icon-bar"></span>
-				        <span class="icon-bar"></span>
-				        <span class="icon-bar"></span>
-				    </button>
-				    <div class="navbar-brand">
-					    <a href="index.php">
-					    	<img style="height: 140px" class="img-responsive" src="images/logo33.png" alt="logo">
-					    </a> 
-				    </div>                   
-				</div><!--/ Logo end -->
-				<nav class="collapse navbar-collapse clearfix" role="navigation">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="index.html">Home</a></li>
-						<li class="dropdown">
-                       		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Company <i class="fa fa-angle-down"></i></a>
-                       		<div class="dropdown-menu">
-								<ul>
-		                            <li><a href="about.html">About Us</a></li>
-		                            <li><a href="service.html">Services</a></li>
-		                            <li><a href="career.html">Career</a></li>
-		                        </ul>
-	                    	</div>
-	                    </li>
-						
-	                    <li><a href="team.html">Team</a></li>
-            			<li><a href="contact.html">Contact</a></li>
-                    </ul>
-				</nav><!--/ Navigation end -->
-			</div><!--/ Row end -->
-		</div><!--/ Container end -->	
+				<div class="header3">
+					<!-- Logo start -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse"
+							data-target=".navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<div class="navbar-brand">
+							<a href="index.html">
+								<img style="height: 65px" class="img-responsive" src="images/logobig.png"
+									alt="logo">
+							</a>
+						</div>
+					</div>
+					<!--/ Logo end -->
+					<nav class="collapse navbar-collapse clearfix" role="navigation">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="index.html">Home</a></li>
+
+
+							<li><a href="about.html">About Us</a></li>
+
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Company <i
+										class="fa fa-angle-down"></i></a>
+								<div class="dropdown-menu">
+									<ul>
+										<li><a href="team.html">Team</a></li>
+										<li><a href="career.html">Career</a></li>
+									</ul>
+								</div>
+							</li>
+
+							<li><a href="service.html">Services</a></li>
+
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+					<!--/ Navigation end -->
+
+				</div>
+				<!--/ header 3 end -->
+			</div>
+			<!--/ Row end -->
+		</div>
+		<!--/ Container end -->
 	</header><!--/ Header end -->
 
 
@@ -278,8 +313,7 @@
 			<div class="row">
 				<div class="col-md-12 text-center">
 					<div class="copyright-info">
-         			 &copy; Copyright 2019 Themefisher. <span>Designed by <a href="https://themefisher.com/">Themefisher.com</a></span>
-        			</div>
+         			 &copy; Copyright 2020 <span><a href="index.html">AutoMate Info Sys</a></span>
 				</div>
 			</div><!--/ Row end -->
 		   <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top affix">
@@ -293,6 +327,21 @@
 
 	<!-- initialize jQuery Library -->
 	<script type="text/javascript" src="js/jquery.js"></script>
+	<script>
+		$(document).ready(function () {
+			$(window).scroll(function () {
+				var scroll = $(window).scrollTop();
+				if (scroll > 100) {
+					$(".header3").css({ "background": "white", "transition": "background  .5s" });
+					$(".header3 ul.navbar-nav > li > a").css("color", "#ee3b24");
+				}
+				else {
+					$(".header3").css("background", "transparent");
+					$(".header3 ul.navbar-nav > li > a").css("color", "white");
+				}
+			})
+		})
+	</script>
 	<!-- Bootstrap jQuery -->
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<!-- Style Switcher -->
@@ -343,6 +392,7 @@
 	     });
 
 	</script>
+	
 
 	
 	<!-- Template custom -->
