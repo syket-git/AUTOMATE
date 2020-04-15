@@ -9,7 +9,7 @@
 	================================================== -->
 	<meta charset="utf-8">
 	<link rel="shortcut icon" href="images/logo33.png" type="image/x-icon">
-	<title> Automate Home</title>
+	<title> Automate | Home</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 
@@ -83,7 +83,7 @@
 		.card {
 			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 			transition: 0.3s;
-			width: 50%;
+			max-width: 50%;
 			border-radius: 30px;
 			margin: 0 auto;
 
@@ -119,6 +119,12 @@
 		.portfolio .icon-pentagon {
 			background: none repeat scroll 0 0 #ee3b24;
 			font-size: 35px !important;
+		}
+		.carousel-inner>.item>img{
+		    display: block;
+		    min-height: 600px;
+		    max-width: 100%;
+		    line-height: 1;
 		}
 	</style>
 
@@ -227,7 +233,7 @@
 									<div class="card">
 
 										<div class="card-color">
-											<div style="color: #ee3b24;" class="card-header">
+											<div class="title" style="color: #ee3b24;" class="card-header">
 												Web Design
 											</div>
 											<div class="card-body">
@@ -258,7 +264,7 @@
 									<div class="card">
 
 										<div class="card-color">
-											<div style="color: #ee3b24;" class="card-header">
+											<div class="title" style="color: #ee3b24;" class="card-header">
 												Apps Development
 											</div>
 											<div class="card-body">
@@ -286,12 +292,12 @@
 									<div class="card">
 
 										<div class="card-color">
-											<div style="color: #ee3b24;" class="card-header">
+											<div class="title" style="color: #ee3b24;" class="card-header">
 												SEO Service
 											</div>
 											<div class="card-body">
 												<h5 class="card-title" style="color: black;">Good SEO work only gets
-													better over time its our main rule</h5>
+													better over time</h5>
 												<p class="card-text" style="color: black">100% Clients satisfaction is
 													our major target and 24/7 support its our another mindset.</p>
 												<a href="#footer" class="btn btn-primary">Hire us!</a>
@@ -322,12 +328,15 @@
 		</section>
 		<!--/ Slider end -->
 		<section id="image-block" class="image-block no-padding">
-			<div class="container-fluid">
+			<div>
 				<div class="row">
-					<div class="col-md-6 ts-padding"
-						style="height:650px;background:url(images/mac.jpg) 50% 50% / cover no-repeat;">
+					<div class="col-xl-6 col-md-6 col-sm-6 col-12 Image">
+						 <!-- style="width:50%; min-height:800px; background:url(/mac.jpg) 50% 50% / cover no-repeat;">  -->
+						 <div class="img">
+						 	<img style="min-height: 652px" class="img-responsive" src="images/mac.jpg" alt="">
+						 </div>
 					</div>
-					<div class="col-md-6 ts-padding img-block-right">
+					<div class="col-xl-12 col-md-6 col-sm-12 col-12 ts-padding img-block-right Info">
 						<div class="img-block-head text-center">
 
 							<h3>About Automate Info Sys</h3>
@@ -429,8 +438,8 @@
 				</div>
 
 				<div class="row">
-					<div class="col-md-12">
-						<div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay=".5s">
+					<div class="col-md-12 text-center">
+						<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 wow fadeInDown" data-wow-delay=".5s">
 							<div class="service-content text-center">
 								<span class="service-icon icon-pentagon"><i class="fab fa-react"></i></span>
 								<h3>Web Design</h3>
@@ -440,7 +449,7 @@
 						</div>
 						<!--/ End first service -->
 
-						<div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay=".8s">
+						<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 wow fadeInDown" data-wow-delay=".8s">
 							<div class="service-content text-center">
 								<span class="service-icon icon-pentagon"><i class="fab fa-app-store-ios"></i></span>
 								<h3>Apps Development</h3>
@@ -451,7 +460,7 @@
 						</div>
 						<!--/ End Second service -->
 
-						<div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="1.1s">
+						<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 wow fadeInDown" data-wow-delay="1.1s">
 							<div class="service-content text-center">
 								<span class="service-icon icon-pentagon"><i class="fa fa-shopping-cart"></i></span>
 								<h3>eCommerce Websites</h3>
@@ -461,7 +470,7 @@
 						</div>
 						<!--/ End Third service -->
 
-						<div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="1.4s">
+						<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 wow fadeInDown" data-wow-delay="1.4s">
 							<div class="service-content text-center">
 								<span class="service-icon icon-pentagon"><i class="fas fa-lightbulb"></i></span>
 								<h3>Design for Startups</h3>
@@ -476,8 +485,8 @@
 				<div class="gap-40"></div>
 
 				<div class="row">
-					<div class="col-md-12">
-						<div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay=".5s">
+					<div class="col-md-12 text-center">
+						<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 wow fadeInDown" data-wow-delay=".5s">
 							<div class="service-content text-center">
 								<span class="service-icon icon-pentagon"><i class="fas fa-chart-bar"></i></span>
 								<h3>SEO Service</h3>
@@ -487,7 +496,7 @@
 						</div>
 						<!--/ End first service -->
 
-						<div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay=".8s">
+						<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 wow fadeInDown" data-wow-delay=".8s">
 							<div class="service-content text-center">
 								<span class="service-icon icon-pentagon"><i class="fa fa-bicycle"></i></span>
 								<h3>Startup Idea</h3>
@@ -498,7 +507,7 @@
 						</div>
 						<!--/ End Second service -->
 
-						<div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="1.1s">
+						<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 wow fadeInDown" data-wow-delay="1.1s">
 							<div class="service-content text-center">
 								<span class="service-icon icon-pentagon"><i class="fa fa-comments"></i></span>
 								<h3>Consultation</h3>
@@ -508,7 +517,7 @@
 						</div>
 						<!--/ End Third service -->
 
-						<div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="1.4s">
+						<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 wow fadeInDown" data-wow-delay="1.4s">
 							<div class="service-content text-center">
 								<span class="service-icon icon-pentagon"><i class="fas fa-dollar-sign"></i></span>
 								<h3>Croud Funding</h3>
@@ -546,7 +555,7 @@
 
 				<div class="row text-center">
 
-					<div class="col-md-3 col-sm-6">
+					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
 						<div class="team wow slideInLeft">
 							<div class="img-hexagon">
 								<img src="images/Member/farhad.jpg" alt="">
@@ -567,7 +576,7 @@
 
 					<!--/ Team 2 end -->
 
-					<div class="col-md-3 col-sm-6">
+					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
 						<div class="team wow slideInLeft">
 							<div class="img-hexagon">
 								<img src="images/Member/km.jpg" alt="">
@@ -586,7 +595,7 @@
 						</div>
 					</div>
 					<!--/ Team 1 end -->
-					<div class="col-md-3 col-sm-6">
+					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
 						<div class="team wow slideInRight">
 							<div class="img-hexagon">
 								<img src="images/Member/susmoy.jpg" alt="">
@@ -605,7 +614,7 @@
 						</div>
 					</div>
 					<!--/ Team 3 end -->
-					<div class="col-md-3 col-sm-6">
+					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
 						<div class="team animate wow slideInRight">
 							<div class="img-hexagon">
 								<img src="images/Member/shuvo.jpg" alt="">
@@ -624,7 +633,7 @@
 						</div>
 					</div>
 
-					<div class="col-md-3 col-sm-6">
+					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
 						<div class="team animate wow slideInRight">
 							<div class="img-hexagon">
 								<img src="images/Member/kamrul.jpg" alt="">
@@ -643,7 +652,7 @@
 						</div>
 					</div>
 
-					<div class="col-md-3 col-sm-6">
+					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
 						<div class="team animate wow slideInRight">
 							<div class="img-hexagon">
 								<img src="images/Member/riaz.jpg" alt="">
@@ -661,7 +670,7 @@
 						</div>
 					</div>
 
-					<div class="col-md-3 col-sm-6">
+					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
 						<div class="team animate wow slideInRight">
 							<div style="height: 241px; overflow: hidden;" class="img-hexagon">
 								<img style="transform:rotate(270deg)" src="images/Member/barua.jpg" alt="">
@@ -680,10 +689,10 @@
 					</div>
 
 
-					<div class="col-md-3 col-sm-6">
+					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
 						<div class="team animate wow slideInRight">
 							<div style="overflow: hidden;" class="img-hexagon">
-								<img style="width: 100%; height: 136%; margin-top: -61px; margin-left: 9px;" src="images/Member/syket.jpg" alt="">
+								<img  style="width: 100%; height: 136%; margin-top: -61px; margin-left: 9px;" src="images/Member/syket.jpg" alt="">
 								<span class="img-top"></span>
 								<span class="img-bottom"></span>
 							</div>
@@ -729,7 +738,7 @@
 
 			<div class="container">
 
-				<div class="row">
+				<div style="margin:0 auto;" class="row">
 
 					<div class="col-md-4 col-sm-12 footer-widget">
 						<h3 class="widget-title">Album</h3>

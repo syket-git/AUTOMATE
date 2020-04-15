@@ -2,7 +2,33 @@
 ================================================== */
 
 /* Large Devices, Wide Screens */
-@media (min-width : 1200px) {
+
+@media all and (max-width: 1242px){
+	.card .title{
+		font-size: 40px;
+	}
+}
+
+@media all and (max-width: 1237px){
+	#image-block .Image{
+		display: none;
+	}
+	#image-block .Info{
+		width: 100%;
+		margin:0 auto;
+		display: block;
+		justify-content: center; 
+
+	}
+	.img-block-right {
+	    padding: 60px;
+	    padding-top: 30px;
+	    padding-bottom: 30px;
+	}
+} 
+
+
+@media (max-width : 1200px) {
 
 	/* Dropdown animation */
 	.navbar-nav .dropdown-menu,
@@ -40,6 +66,14 @@
 	 .navbar-nav .dropdown-backdrop {
 		visibility: hidden;
 	}
+
+	
+	.img-hexagon{
+		overflow: hidden;
+	}
+
+
+
 	
 }
 
@@ -54,6 +88,9 @@
 
 	.dropdown i{
 		display: none;
+	}
+	.center{
+		text-align: center;
 	}
 
 }
@@ -271,11 +308,38 @@
 
 }
 
-/* Small Devices Potrait */
-@media (max-width : 767px){
 
+/* Small Devices Potrait */
+@media all and (max-width : 768px){
+
+	.navbar-header button{
+		margin-right: 30px;
+    	margin-top: 23px;
+	}
+
+	.card{
+		max-width: 80% !important;
+	}
 	
-	/* Common */
+	#main-slide .slider-content h2 {
+	    font-size: 16px;
+	    line-height: normal;
+	    margin-top: -110px;
+	}
+	#main-slide .animated7 .card {
+	    width: 80%;
+	}
+	.card .title{
+		font-size: 22px;
+	}
+	.card-title{
+		font-size: 16px;
+	}
+	.card-text{
+		font-size: 12px;
+	}
+	
+
 	.parallax{
 		padding: 60px 0;
 	}
@@ -340,6 +404,10 @@
 		color: #ee3b24;
 	}
 
+	.icon-center{
+		margin-left: 50px;
+	}
+
 	/* Slideshow */
 
 	#main-slide .slider-content{
@@ -379,6 +447,16 @@
 		position: relative;
 	}
 
+	.cprofile{
+		text-align:center;
+	}
+	.p-details{
+		text-align: center !important;
+	}
+	.map-res{
+		margin-left: 20px;
+	}
+
 
 	/* Service */
 
@@ -411,9 +489,7 @@
 
 	/* Image block */
 
-	.img-block-right {
-  		padding-right: 50px;
-	}
+	
 
 	.img-block-head h2{
 		font-size: 16px;
@@ -469,6 +545,7 @@
 	.plan{
 		margin-bottom: 60px;
 	}
+
 
 	/* Testimonial */
 
@@ -547,6 +624,8 @@
 
 
 }
+
+
 
 /* Extra Small Devices, Phones */ 
 @media (max-width : 479px) {
